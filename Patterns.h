@@ -1,7 +1,6 @@
 #ifndef PatternsH
 #define PatternsH
-//ПИШЕМ ШАБЛОН ИТЕРАТОРА
-//итератор позволяет разбирать элементы любого типа
+
 template<class Type>
 class Iterator
 {

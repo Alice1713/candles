@@ -65,17 +65,17 @@ public:
         int TimeLeft = BurningTime - time;
         if (TimeLeft>=0)
         {
-           cout << "Wax candle is burning " << time << " min"<< endl;
+           cout << "Wax candle is burning " << time << " min... "<< endl;
         };
 
         if ((BurningTime>0)&&(TimeLeft<0))
         {
-            cout << "Wax candle is burning " << BurningTime << " min" << endl;
-            cout << "The candle can no longer burn"<< endl;
+            cout << "Wax candle is burning " << BurningTime << " min... " << endl;
+            cout << "The candle can no longer burn! "<< endl;
         };
         BurningTime = TimeLeft;
         return TimeLeft;}
-    void TrimWick() {cout << "Wick trimmed by 2 mm"; }
+    void TrimWick() {cout << " Wick trimmed by 2 mm"; }
 
 };
 
@@ -91,18 +91,18 @@ public:
         int TimeLeft = BurningTime - time;
         if (TimeLeft>=0)
         {
-           cout << "Paraffin candle is burning " << time << " min"<< endl;
+           cout << "Paraffin candle is burning " << time << " min... "<< endl;
         };
 
         if ((BurningTime>0)&&(TimeLeft<0))
         {
-            cout << "Paraffin candle is burning " << BurningTime << " min" << endl;
-            cout << "The paraffin candle can no longer burn"<< endl;
+            cout << "Paraffin candle is burning " << BurningTime << " min... " << endl;
+            cout << "The paraffin candle can no longer burn! "<< endl;
         };
         BurningTime = TimeLeft;
 
         return TimeLeft;}
-    void TrimWick() {cout << "Wick trimmed by 3 mm"; }
+    void TrimWick() {cout << " Wick trimmed by 3 mm"; }
 
 };
 
@@ -118,19 +118,19 @@ public:
         int TimeLeft = BurningTime - time;
         if (TimeLeft>=0)
         {
-           cout << "Gel candle is burning " << time << " min"<< endl;
+           cout << "Gel candle is burning " << time << " min... "<< endl;
         }
         else
 
         if ((BurningTime>0)&&(TimeLeft<0))
         {
-            cout << "Gel candle is burning " << BurningTime << " min" << endl;
-            cout << "The gel candle can no longer burn"<< endl;
+            cout << "Gel candle is burning " << BurningTime << " min... " << endl;
+            cout << "The gel candle can no longer burn! "<< endl;
         };
         BurningTime = TimeLeft;
 
         return TimeLeft;}
-        void TrimWick() {cout << "Wick trimmed by 1 mm"; }
+        void TrimWick() {cout << " Wick trimmed by 1 mm"; }
 };
 
 class FCIterator : public Iterator<CandlePtr>
